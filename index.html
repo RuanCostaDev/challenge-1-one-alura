@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Encriptador de texto</title>
+    </head>
+    <body>
+        <main>
+            <div class="left-main">
+                <img class="logo" src="./assets/img/Frame 6.png" alt="Imagem com a letra a, símbolo da Alura.">
+                <div class="input-area">
+                    <textarea data-type-input placeholder="Digite seu texto" id="text-box" cols="30" rows="8"></textarea>
+                    
+                    <div class="cta">
+                        <div class="info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                            </svg>
+                            <p>Apenas letras minúsculas e sem acento</p>
+                        </div>                    
+                        <button data-button-criptografa class="button-1">Criptografar</button>
+                        <button data-button-descriptografa class="button-2">Descriptografar</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="output-area">
+                <img src="./assets/img/High quality products 1 1.svg" alt="Imagem de uma pessoa com lupa olhando para um diamante.">
+                <p data-type-output>Nenhuma mensagem encontrada</p>
+                <p class="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="button-copy" hidden>Copia</button>
+            </div>    
+
+        </main>
+        <script src="./assets/script/script.js"></script>
+    </body>
+</html>
