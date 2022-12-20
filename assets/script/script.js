@@ -26,10 +26,10 @@ function criptografaTexto() {
 
     formularioSaida.parentElement.style.justifyContent = 'space-between';
     formularioSaida.parentElement.style.overflowY = 'auto';
-    formularioSaida.parentElement.style.alignItems = 'baseline';
-
+    formularioSaida.style.textAlign = 'left';
+    
     botaoCopia.hidden = false;
-
+    
     formularioSaida.previousElementSibling.hidden = true;
     formularioSaida.nextElementSibling.hidden = true;
 
@@ -46,7 +46,7 @@ function descriptografaTexto() {
 
     formularioSaida.parentElement.style.justifyContent = 'space-between';
     formularioSaida.parentElement.style.overflowY = 'auto';
-    formularioSaida.parentElement.style.alignItems = 'baseline';
+    formularioSaida.style.textAlign = 'left';
 
     botaoCopia.hidden = false;
 
@@ -63,6 +63,8 @@ function verificaFormulário() {
         formularioSaida.previousElementSibling.hidden = false;
         formularioSaida.nextElementSibling.hidden = false;
         formularioSaida.innerText = 'Nenhuma mensagem encontrada';
+        formularioSaida.style.textAlign = 'center';
+
     }
 }
 

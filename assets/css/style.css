@@ -5,7 +5,6 @@ body{
     flex-direction: column;
     background: #F3F5FC;
     font-family: 'Inter', sans-serif;
-    max-height: 100vh;
     box-sizing: border-box;
 
 }
@@ -85,11 +84,13 @@ main {
 }
 
 .button-copy {
-    height: 2em;
-    width: 100%;
+    margin-top: 32px;
+    height: 67px;
+    width: 98%;
+    border: 1px solid #0A3871;
     border-radius: 24px;
-    background: #0A3871;
-    color: #FFFFFF;
+    background: inherit;
+    color: #0A3871;
     margin-right: 1%;
 }
 
@@ -102,8 +103,8 @@ main {
     border-radius: 32px;
     padding: 32px;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
     overflow-wrap: break-word;
     width: 100%;
 }
@@ -123,4 +124,100 @@ main {
 footer {
     background: #0A3871;
     
+}
+
+
+@media screen and (max-width: 414px) {
+    .body {
+        width: 100vw;
+    }
+    main {
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        height: fit-content;
+    }
+
+    .logo {
+        margin: 16px 0 80px 0;
+    }
+
+    .left-main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-area {
+        padding-left: 0;
+        width: 100vw;
+    }
+
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .button-1 {
+        width: 98%;
+        margin-bottom: 24px;
+    }
+
+    .button-2 {
+        width: 98%;
+    }
+
+    .output-area {
+        box-sizing: border-box;
+        margin: 64px 24px 0 24px;
+        margin-top: 64px;
+        width: 100%;
+        overflow-y: none;
+        height: fit-content;
+    }
+
+    .output-area img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        width: 100vw;
+    }
+    main {
+        width: 100vw;
+        padding: 40px;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        height: fit-content;
+    }
+
+    .logo {
+        margin: 0 0 40px 0;
+    }
+
+    .left-main {
+        margin: 0;
+    }
+
+    .input-area {
+        width: 100vw;
+        padding-left: 0;
+    }
+
+    .output-area {
+        margin-top: 64px;
+        width: 100vw;
+        overflow-y: none;
+        height: fit-content;
+    }
+
+    .output-area img {
+        display: none;
+    }
 }
